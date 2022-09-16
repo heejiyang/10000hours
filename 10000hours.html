@@ -7,20 +7,19 @@
     <title>Document</title>
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/10000hours.css">
+    <script defer src="js/10000hours.js"></script>
 </head>
 <body>
     <main id="app">
-        <h1 class="tit-timelaw">
-            <img src="/img/title.png" alt="1만시간의 법칙">
-            <img src="/img/clock.png" alt="">
+        <h1>
+            <img class="title" src="/img/title.png" alt="1만시간의 법칙">
         </h1>
         <img class="img-txt" src="/img/sub-title.png" alt="연습은 어제의 당신보다 당신을 더 낫게 만든다.">
-        <img class="img-quotes.png" src="/img/quotes.png" alt="">
-            <p class="txt-desc">
-            <strong class="tit-desc">1만 시간의 법칙</strong>은<br>
-            어떤 분야의 전문가가 되기 위해서는<br>
-            최소한 1만 시간의 훈련이 필요하다는 법칙이다.
-        </p>
+        <section class="txt-desc">
+            <p>
+                <strong>1만 시간의 법칙</strong>은<br>어떤 분야의 전문가가 되기 위해서는<br>최소한 1만 시간의 훈련이 필요하다는 법칙이다.
+            </p>
+        </section>
         <form class="cont-inp">
             <p class="txt-wannabe">
                 나는
@@ -32,93 +31,44 @@
                 <input type="text"placeholder="예)5시간" required>
                 시간씩 훈련할 것이다.
             </p>
-            <button class="btn-exc">나는 며칠 동안 훈련을 해야 1만 시간이 될까?</button>
-            <img src="/img/click.png" alt="">
         </form>
-        <section id="result" class="cont-result">
+        <div class="btn-wrap">
+            <button class="btn exc">나는 며칠 동안 훈련을 해야 1만 시간이 될까?</button>
+            <img class="click" src="/img/click.png" alt="">
+        </div>
+        <section id="result">
             <h2 class="blind">결과 확인</h2>
-            <p class="txt-wannabe">
+            <p class="result-wannabe">
                 당신은
-                <strong></strong>
+                <strong>프로그래밍</strong>
                 전문가가 되기 위해서
             </p>
-            <p class="txt-time">
+            <p class="result-time">
                 대략
-                <strong></strong>
+                <strong>5110</strong>
                 일 이상 훈련하셔야 합니다! :)
             </p>
-                <button class="btn-go">훈련하러 가기 GO!GO!</button>
-                <button class="btn-share">공유하기</button>
+            <div class="btn-result">
+                <button class="btn modal-open">훈련하러 가기 GO!GO!</button>
+                <button class="btn share">공유하기</button>
+            </div>
         </section>
     </main>
     <footer class="cont-footer">
         <img class="logo" src="/img/logo.png" alt="주식회사 위니브">
-        <p class="txt-footer">
+        <small class="txt-footer">
             ※ 본 서비스 내 이미지 및 콘텐츠의 저작권은 주식회사 WeNiv에 있습니다.<br>
             수정 및 재배포, 무단 도용 시 법적인 문제가 발생할 수 있습니다.
-        </p>
+        </small>
     </footer>
-    <section class="cont-modal">
+    <section id="cont-modal">
         <h2 class="blind">응원 모달</h2>
-        <img src="/img/화이팅!!♥♥♥.png" alt="화이팅">
-        <img src="/img/당신의 꿈을 응원합니다!.png" alt="">
-        <!-- <p>
+        <p class="cheer">
             <strong>화이팅!!♥♥♥ </strong><br>
             당신의 꿈을 응원합니다.
-        </p> -->
-        <img src="/img/licat.png" alt="응원하는 라이켓">
-        <button class="btn-go">종료하고 진짜 훈련하러 가기 GO!GO!</button>
+        </p>
+        <img class="licat" src="/img/licat.png" alt="응원하는 라이켓">
+        <button class="btn go">종료하고 진짜 훈련하러 가기 GO!GO!</button>
     </section>
-
-<!-- heeji
-    <header>
-        <img class="title" src="/img/title.png" alt="">
-        <img class="favicon" src="/img/favicon.ico" alt="">
-    </header>
-    <main>
-        <p>“연습은 어제의 당신보다 당신을 더 낫게 만든다.”</p>
-        <section class="quote">
-            <img src="/img/quotes.png" alt="">
-            <em>1만 시간의 법칙</em>
-            <h2>
-                은 어떤 분야의 전문가가 되기 위해서는<br>
-                최소한 1만 시간의 훈련이 필요하다는 법칙이다.
-            </h2>
-        </section>
-        <section>
-            <h2>나는</h2>
-            <input type="text">
-            <p>전문가가 될 것이다.</p>
-        </section>
-        <section>
-            <h2>그래서 앞으로 매일 하루에</h2>
-            <input type="text">
-            <p>시간씩 훈련할 것이다.</p>
-        </section>
-        <section>
-            <button>나는 며칠 동안 훈련을 해야 1만 시간이 될까?</button>
-            <img src="/img/click.png" alt="">
-        </section>
-        <section>
-            <p>당신은</p>
-            <strong>프로그래밍</strong>
-            <p>전문가가 되기 위해서</p>
-        </section>
-        <section>
-            <p>대략</p>
-            <strong>5110</strong>
-            <p>일 이상 훈련하셔야 합니다! :)</p>
-        </section>
-        <section>
-            <button>훈련하러 가기 GO!GO!</button>
-            <button>공유하기</button>
-        </section>
-    </main>
-    <footer>
-        <img class="logo" src="/img/logo.png" alt="">
-        <p>※ 본 서비스 내 이미지 및 콘텐츠의 저작권은 주식회사 WeNiv에 있습니다.
-            수정 및 재배포, 무단 도용 시 법적인 문제가 발생할 수 있습니다.</p>
-    </footer>
--->
 </body>
 </html>
