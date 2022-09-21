@@ -46,3 +46,15 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+.cont-inp .txt-desc #result {
+	margin: 0;
+	padding: 0;
+}
+.blind {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	clip: rect( 0 0 0 0);
+	margin: -1px;
+	overflow: hidden;
+}
