@@ -40,6 +40,11 @@ body {
     font-family: 'GmarketSansMedium';
     justify-content: center;
 }
+input {
+    margin: 0;
+    padding: 0;
+    border-style: none;
+}
 #app h1 {
     height: 265px;
     background-image: url(../img/clock.png);
@@ -87,7 +92,6 @@ body {
     font-size: 24px;
 }
 .cont-inp input {
-    border-style: none;
     border-radius: 7px;
     font-size: 24px;
     color: #BABCBE;
@@ -122,8 +126,7 @@ body {
     width: 64px;
     height: 72px;
     position: absolute;
-    right: -75px;
-    bottom: -25px;
+    vertical-align: baseline;
 }
 #result {
     display: flex;
@@ -133,16 +136,16 @@ body {
     font-size: 24px;
     vertical-align: baseline;
 }
-.result-wannabe p {
+.result-wannabe {
     margin-bottom: 17px;
-    line-height: 1.7;
+}
+.result-wannabe p {
     vertical-align: middle;
 }
 #result strong {
     font-family: 'GmarketSansBold';
     font-size: 72px;
     margin: auto 12px;
-    /* padding: 0 10px; */
     vertical-align: middle;
 }
 .btn-result {
@@ -159,7 +162,6 @@ body {
     height: 66px;
     background-color: #FFFFFF;
 }
-
 .cont-footer {
     display: flex;
     flex-direction: column;
@@ -173,7 +175,6 @@ body {
 .logo {
     margin-bottom: 20px;
 }
-
 #cont-modal {
     display: none;
     text-align: center;
