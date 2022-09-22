@@ -135,7 +135,7 @@ body {
 }
 .result-wannabe p {
     margin-bottom: 17px;
-    line-height: 3.5;
+    line-height: 1.7;
     vertical-align: middle;
 }
 #result strong {
@@ -149,7 +149,7 @@ body {
     margin-top: 127px;
     margin-bottom: 130px;
 }
-.btn-result .modal-open {
+.btn-result .modal-open-btn {
     width: 356px;
     height: 66px;
     margin-right: 18px;
@@ -177,8 +177,10 @@ body {
 #cont-modal {
     display: none;
     text-align: center;
-    top: -100%;
+    top: 50%;
     left: 50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
     width: 800px;
     height: 800px;
     box-sizing: border-box;
