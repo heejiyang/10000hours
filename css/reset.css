@@ -46,9 +46,9 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-.cont-inp .txt-desc #result {
-	margin: 0;
-	padding: 0;
+img{
+	display: block;
+	width:100%;
 }
 .blind {
 	position: absolute;
