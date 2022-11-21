@@ -52,7 +52,7 @@
 
 /* app */
 #app {
-    font-family: GmarketSansMedium;
+    font-family: 'GmarketSansMedium';
     background-color: #5b2385;
     color: white;
     text-align: center;
@@ -170,3 +170,138 @@ input::placeholder {
 }
 
 /* 공통 버튼 */
+.cont-inp .btn-exc, .btn-go, .btn-share, .btn-close {
+    padding: 21px 49px;
+    margin-bottom: 150px;
+    font-size: 24px;
+    font-family: 'GmarketSansBold';
+    color: #5b2385;
+    background-color: #fcee21;
+    border-radius: 56px;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-go, .btn-share, .btn-close {
+    margin-bottom: 0;
+}
+
+.cont-inp .btn-exc {
+    position: relative;
+}
+
+.cont-inp .btn-exc::after {
+    display: block;
+    position: absolute;
+    right: -72px;
+    bottom: -20px;
+    content: '';
+    width: 64px;
+    height: 72px;
+    background-image: url("../img/hand.png");
+}
+
+/* 결과 로딩 */
+.cont-result-loading {
+    display: none;
+    justify-content: center;
+}
+
+.cont-result-loading .img-rotate {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    -webkit-animation: rotate 1.1s infinite linear;
+            animation: rotate 1.1s infinite linear;
+}
+
+/* 결과 */
+.cont-result .txt-wannabe {
+    line-height: 120px;
+}
+
+.cont-result {
+    display: none;
+    margin-bottom: 130px;
+}
+
+.cont-result .txt-wannabe {
+    margin-bottom: 22px;
+}
+
+.cont-result .txt-time {
+    margin-bottom: 127px;
+}
+
+.cont-result .txt-wannabe strong, .cont-result .txt-time strong {
+    font-size: 72px;
+    vertical-align: top;
+    font-family: 'GmarketSansBold';
+}
+
+/* 공유 버튼 */
+.btn-share {
+    background-color: #FFF;
+    margin-left: 20px;
+}
+
+/* footer */
+.cont-footer {
+    font-family: 'Noto Sans KR';
+    font-size: 12px;
+    line-height: 17px;
+}
+
+.cont-footer .img-footer {
+    width: 125px;
+    height: 25px;
+    margin: 0 auto 20px;
+}
+
+/* 모달 - 훈련하러가기 */
+#modal {
+    position: fixed;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+}
+
+#modal .modal_wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    height: 600px;
+    background-color: #FFF;
+    border-radius: 20px;
+}
+
+#modal .tit-modal {
+    font-family: 'GmarketSansMedium';
+    font-size: 50px;
+}
+
+#modal .cont-modal {
+    font-family: 'GmarketSansMedium';
+    font-size: 30px;
+}
+
+#modal .img-licat {
+    margin-bottom: 20px;
+}
+
+#modal .btn-close {
+    box-shadow: 0px 6px 16px 0px rgb(0 0 0 / 15%), 0px 5px 16px 0px rgb(0 0 0 / 15%);
+    margin-bottom: 20px;
+}
+
+#modal .img-licat{
+    width: 70%;
+}
