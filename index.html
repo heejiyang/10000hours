@@ -1,87 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>1만 시간의 법칙</title>
-        <link rel="stylesheet" href="./css/reset.css">
-        <link rel="stylesheet" href="./css/style.css">
-        <script src="./js/main.js"></script>
-    </head>
-    <body>
-        <main id="app">
-            <!-- 1만 시간의 법칙 로고와 문구 -->
-            <h1 class="tit-law">
-                <img class="img-tit" src="img/title.png" alt="1만 시간의 법칙">
-            </h1>
-            <img class="img-txt" src="img/sub-title.png" alt="연습은 어제의 당신보다 당신을 더 낫게 만든다.">
-            <p class="txt-desc">
-                <strong class="tit-desc">1만 시간의 법칙</strong>은<br>
-                어떤 분야의 전문가가 되기 위해서는<br>
-                최소한 1만 시간의 훈련이 필요하다는 법칙이다.
-            </p>
-
-            <!-- 법칙 & 사용자 입력-->
-            <form class="cont-inp">
-                <p class="txt-wannabe">
-                    나는
-                    <input id="inp-field" type="text" placeholder="예) 프로그래밍" required>
-                    전문가가 될 것이다.
-                </p>
-                <p class="txt-time">
-                    그래서 앞으로 매일 하루에
-                    <input id="inp-time" type="number" placeholder="예) 5" required>
-                    시간씩 훈련할 것이다.
-                </p>
-                <div class="btn-wrap">
-                    <button class="btn-exc" type="button">나는 며칠 동안 훈련을 해야 1만 시간이 될까?</button>
-                    <img class="click" src="./img/click.png" alt="손모양">
-                </div>
-            </form>
-
-            <!-- 결과 로딩 -->
-            <section class="cont-result-loading">
-                <h2 class="blind">결과 확인 로딩</h2>
-                <img class="img-rotate" src="./img/loading.png" alt="">
-            </section>
-
-            <!-- 결과 -->
-            <section class="cont-result">
-                <h2 class="blind">결과</h2>
-                <p class="txt-wannabe">
-                    당신은
-                    <strong class="field-result"></strong>
-                    전문가가 되기 위해서<br>대략
-                    <strong class="time-result"></strong>
-                    일 이상 훈련하셔야 합니다! :)
-                </p>
-                <button class="btn-go">훈련하러 가기 GO!GO!</button>
-                <button class="btn-share">공유하기</button>
-            </section>
-
-            <!-- 회사 저작권 -->
-            <footer class="cont-footer">
-                <img class="img-footer" src="img/logo.png" alt="주식회사 위니브">
-                <p class="txt-footer">
-                    ※ 본 서비스 내 이미지 및 콘텐츠의 저작권은 주식회사 WeNiv에 있습니다.
-                </p>
-                <p>
-                    수정 및 재배포, 무단 도용 시 법적인 문제가 발생할 수 있습니다.
-                </p>
-            </footer>
-        </main>
-
-        <!-- 모달 -->
-        <section id="modal">
-            <h2 class="blind">응원 모달</h2>
-            <article class="modal-wrap">
-                <h3 class="blind">응원 문구</h3>
-                <p class="tit-modal">화이팅!!♥♥♥</p>
-                <p class="cont-modal">당신의 꿈을 응원합니다!</p>
-                <img class="img-licat" src="img/licat.png" alt="응원하는 라이켓">
-                <button class="btn-close">종료하고 진짜 훈련하러 가기 GO!GO!</button>
-            </article>
-        </section>
-    </body>
-</html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1만 시간의 법칙</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- <script defer src="./js/main.js"></script> -->
+  </head>
+  <body>
+    <main id="app">
+      <h1 class="tit-law">
+        <img class="img-tit" src="./img/title.png" alt="1만 시간의 법칙">
+      </h1>
+      
+      <!-- 문구 -->
+      <div>
+        <img class="img-txt" src="./img/sub-title.png" alt="연습은 어제의 당신보다 당신을 더 낫게 만든다.">
+        <p class="txt-desc">
+          <strong class="tit-desc">1만 시간의 법칙</strong>은
+          <br>
+          어떤 분야의 전문가가 되기 위해서는
+          <br>
+          최소한 1만 시간의 훈련이 필요하다는 법칙이다.
+        </p>
+      </div>
+      
+      <!-- 사용자 입력 창 그리고 결과 확인 버튼 -->
+      <form class="cont-inp">
+        <p class="txt-wannabe">
+          나는
+          <input id="inp-field" type="text" placeholder="예) 프로그래밍" required>
+          전문가가 될 것이다.
+        </p>
+        <p class="txt-time">
+          그래서 앞으로 매일 하루에
+          <input id="inp-time" type="number" placeholder="예) 5시간" required>
+          시간씩 훈련할 것이다.
+        </p>
+        <div class="btn-wrap">
+          <button class="btn-open" type="button">나는 며칠 동안 훈련을 해야 1만 시간이 될까?</button>
+        </div>
+      </form>
+      
+      <!-- 결과 로딩 -->
+      <section class="cont-result-loading">
+        <h2 class="blind">결과 확인 로딩</h2>
+        <img class="img-rotate" src="./img/loading.png" alt="결과 로딩">
+      </section>
+      
+      <!-- 결과창 -->
+      <section class="cont-result">
+        <h2 class="blind">결과</h2>
+        <p class="txt-wannabe">
+          당신은
+          <strong class="field-result"></strong>
+          전문가가 되기 위해서
+          <br>대략
+          <strong class="time-result"></strong>
+          일 이상 훈련하셔야 합니다! :)
+        </p>
+        <button class="btn-go">훈련하러 가기 GO!GO!</button>
+        <button class="btn-share">공유하기</button>
+      </section>
+      
+      <!-- 회사 저작권 -->
+      <footer class="cont-footer">
+        <img class="img-footer" src="./img/logo.png" alt="주식회사 위니브">
+        <small class="txt-footer">
+          ※ 본 서비스 내 이미지 및 콘텐츠의 저작권은 주식회사 WeNiv에 있습니다.<br>
+          수정 및 재배포, 무단 도용 시 법적인 문제가 발생할 수 있습니다.
+        </small>
+      </footer>
+    </main>
+    
+    <!-- 모달 -->
+    <section id="modal">
+      <h2 class="blind">화이팅 모달</h2>
+      <p class="tit-modal">화이팅!!♥♥♥</p>
+      <p class="cont-modal">당신의 꿈을 응원합니다!</p>
+      <img class="img-modal" src="./img/licat.png" alt="응원하는 라이켓">
+      <button class="btn-close">종료하고 진짜 훈련하러 가기 GO!GO!</button>
+    </section>
+    <script src="./js/main.js"></script>
+  </body>
+  </html>
