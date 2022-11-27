@@ -38,7 +38,7 @@
 }
 
 /* 사라졌다 나타났다 하는 것들 */
-/* .cont-result-loading{
+.cont-result-loading{
     display: none;
 }
 
@@ -48,7 +48,12 @@
 
 #modal{
     display: none;
-} */
+}
+
+main {
+    width: 100%;
+    height: 100%;
+}
 
 /* app */
 #app {
@@ -136,7 +141,19 @@
     margin-bottom: 116px;
 }
 
+.cont-inp .click {
+    position: absolute;
+    width: 64px;
+    height: 72px;
+    left: 1250px;
+    top: 1085px;
+}
+
 /* 입력창 */
+.cont-inp {
+    font-size: 24px;
+    margin-bottom: 147px;
+}
 .cont-inp .txt-wannabe input, .cont-inp .txt-time input {
     width: 224px;
     height: 53px;
@@ -158,10 +175,6 @@ input::-moz-placeholder {
 }
 
 input:-ms-input-placeholder {
-    color: #BABCBE;
-}
-
-input::-ms-input-placeholder {
     color: #BABCBE;
 }
 

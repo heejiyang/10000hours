@@ -5,8 +5,9 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>1만 시간의 법칙</title>
-        <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/style.css">
+        <script src="./js/main.js"></script>
     </head>
     <body>
         <main id="app">
@@ -33,19 +34,23 @@
                     <input id="inp-time" type="number" placeholder="예) 5" required>
                     시간씩 훈련할 것이다.
                 </p>
-                <button class="btn-exc" type="button">나는 며칠 동안 훈련을 해야 1만 시간이 될까?</button>
+                <div class="btn-wrap">
+                    <button class="btn-exc" type="button">나는 며칠 동안 훈련을 해야 1만 시간이 될까?</button>
+                    <img class="click" src="./img/click.png" alt="손모양">
+                </div>
             </form>
 
             <!-- 결과 로딩 -->
             <section class="cont-result-loading">
                 <h2 class="blind">결과 확인 로딩</h2>
-                <img class="img-rotate" src="img/loading.png" alt="">
+                <img class="img-rotate" src="./img/loading.png" alt="">
             </section>
 
             <!-- 결과 -->
             <section class="cont-result">
                 <h2 class="blind">결과</h2>
-                <p class="txt-wannabe">당신은
+                <p class="txt-wannabe">
+                    당신은
                     <strong class="field-result"></strong>
                     전문가가 되기 위해서<br>대략
                     <strong class="time-result"></strong>
@@ -53,7 +58,6 @@
                 </p>
                 <button class="btn-go">훈련하러 가기 GO!GO!</button>
                 <button class="btn-share">공유하기</button>
-            </section>
             </section>
 
             <!-- 회사 저작권 -->
@@ -79,6 +83,5 @@
                 <button class="btn-close">종료하고 진짜 훈련하러 가기 GO!GO!</button>
             </article>
         </section>
-        <script src="js/main.js"></script>
     </body>
 </html>
