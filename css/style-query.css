@@ -1,0 +1,157 @@
+@media screen and (max-width: 700px) {
+  .tit-law {
+    width: 267px;
+    height: 126px;
+    margin-top: 41px;
+    margin-bottom: 31px;
+    background-size: 126px;
+  }
+
+  .img-tit {
+    /* position: absolute; */
+    width: 250px;
+  }
+
+  .sub-tit {
+    font-size: 22px;
+    margin-bottom: 62px;
+  }
+
+  .txt-desc {
+    font-size: 16px;
+    line-height: 2em;
+    margin-bottom: 52px;
+  }
+
+  .tit-desc {
+    font-size: 16px;
+  }
+
+  .cont-inp {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    margin-bottom: 64px;
+  }
+
+  .cont-inp .txt-time {
+    display: block;
+    margin: 17px 0 19px 0;
+  }
+
+  .cont-inp input {
+    width: 156px;
+    height: 37px;
+    margin: 0px 4px;
+    border-radius: 7px;
+    border: none;
+    text-align: center;
+    font-family: inherit;
+    font-size: 14px;
+  }
+
+  .cont-inp .btn-open,
+  .cont-result .btn-go,
+  .cont-result .btn-share,
+  #modal .btn-close {
+    /* height: 40px; */
+    font-size: 14px;
+    white-space: pre-line;
+  }
+
+  .btn-open {
+    width: 241px;
+    height: 68px;
+    border-radius: 13px;
+  }
+
+  .cont-inp .btn-wrap .btn-open::after {
+    width: 43px;
+    right: -50px;
+    bottom: -10px;
+  }
+  
+  .cont-result-loading {
+    margin-bottom: 49px;
+  }
+  
+  .cont-result-loading .img-rotate {
+    width: 70px;
+  }
+  
+  .cont-result {
+    display: none;
+    margin-bottom: 130px;
+  }
+  
+  .cont-result .txt-wannabe {
+    line-height: 120px;
+    margin-bottom: 22px;
+  }
+  
+  .cont-result .txt-wannabe strong {
+    font-size: 72px;
+    vertical-align: top;
+    font-family: 'GmarketSansBold';
+  }
+  
+  .cont-result .btn-share {
+    background-color: #fff;
+    margin-left: 20px;
+  }
+  
+  /* 회사 저작권 */
+  .cont-footer {
+    font-family: 'Noto Sans KR';
+    font-size: 12px;
+    line-height: 17px;
+  }
+  
+  .cont-footer .img-footer {
+    width: 125px;
+    height: 25px;
+    margin: 0 auto 20px;
+  }
+  
+  /* 모달 */
+  #modal {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    width: 600px;
+    height: 600px;
+    background-color: #FFF;
+    border-radius: 20px;
+    display: none;
+  }
+  
+  #modal .tit-modal {
+    font-family: 'GmarketSansMedium';
+    color: #5b2385;
+    font-size: 50px;
+  }
+  
+  #modal .cont-modal {
+    font-family: 'GmarketSansMedium';
+    font-size: 30px;
+    color: #5b2385;
+  }
+  
+  #modal .img-modal {
+    margin-bottom: 20px;
+    width: 70%;
+  }
+  
+  #modal .btn-close {
+    box-shadow: 0px 6px 16px 0px rgb(0 0 0 / 15%), 0px 5px 16px 0px rgb(0 0 0 / 15%);
+    margin-bottom: 20px;
+  }
+}
